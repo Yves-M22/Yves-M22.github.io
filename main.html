@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styling.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+<body>
+	
+<div class="nav">
+	<div class="header"><p>Yves' Website</p></div>
+	<div id="myLinks">
+		<a href="#about">About Me</a>
+        <a href="#projects">Projects/Experience</a>
+        <a href="#coursework">Coursework</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+	</div>
+    <a href="javascript:void(0);" class="icon" onclick="navMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+</div>
+
+<img src="./assets/profile.jpg" class="personalImage" width="25%" height="25%" style="max-width:100%;height:auto;"/>
+
+<div id="about" class="div1">
+	<div class="subheader"><p>About Me</p></div>
+
+    <p> Hello and thank you for taking the time to go through my website! My name's Yves Mojica, a third year computer engineering student at UC San Diego, 
+        with focus on embedded systems and circuits. I've always had an interest and passion for astronomy growing up, even wanting to pursue astrophysics and become a scientist. 
+        During high school, I gained interest in electronics and computers in general which encouraged me to major in something in the ECE field, which leads me to now, currently 
+        an undergraduate student working on their Bachelor's Degree.
+    </p>
+    <br>
+    <p> I'm also really passionate about music, both in creating and listening to it. I've played in two bands since I started playing bass guitar a few years ago, from performing 
+        in front of live audiences, to simply jamming with some friends. I normally play bass guitar, but I've dabbled with guitar and drums as well. Outside of music, I'm also 
+        into video games, spending countless hours growing up with them, and occasionally skateboarding. I've listed every project I've worked on, both in and outside of class,
+        relevant coursework, skills, and my contact information for anyone who'd like to chat.
+    </p>
+</div>
+
+<div id="projects" class="div2">
+    <div class="subheader"><p>Projects/Experience</p></div>
+
+    <div class="projectTitle"><u><a href="https://github.com/Yves-M22/RPL-Hermes-Arduino-Code">Rocket Propulsion Laboratory - Hermes Avionics & NMP</a></u></div>
+
+    <p> I started in RPL my freshman year in the New Member Project, where we worked in teams of 3 to 5 to design and manufacture a smaller scale rocket to introduce newer members
+        to rocketry. I worked in a team of 5 and acted as our sort of leader, communicating with the chief engineer in charge of all the NMP teams, and deciding what to do. Throughout
+        this project, I learned the basics of SOLIDWORKS, 3D printing, and overall rocketry design on a smaller scale. I made technical contributions to our recovery methods, and our
+        avionics bay. I designed and printed a cylinderical bay that would hold a 9V battery, Arduino nano, an altimeter, and a microSD card reader to collect simple data during flight.
+    </p>
+    
+    <p> Starting my second year, I worked on Hermes, a sugar propellant rocket. I spent a lot of my second year being onboarded, reviewing, and changing design choices for our Avionics bay
+        which consists of 3 main systems, recovery, data, and video. While the design for the Avionics bay was mostly finished, it wasn't tested yet, so I 3D printed designs and ordered parts
+        to start physically putting everything together, working with another engineer to do this. I made contributions to our data system, and helped prototype it on Arduino with a breadboard
+        before moving it onto a PCB. Besides any techical contributions I've made to the avionics system on Hermes, I also serve as our team's Safety Officer to ensure any manufacturing processes
+        are being done properly.
+
+    </p>
+
+    <div class="slideshow-container-RPL">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <img src="./assets/team.PNG"  width="30%" height="30%" style="max-width:100%;height:auto;"/>
+            <div class="text">Hermes Team 2023-2024</div>
+        </div>
+      
+        <div class="mySlides fade">
+            <img src="./assets/fritzing.png"  width="30%" height="30%" style="max-width:100%;height:auto;"/>
+            <div class="text">Prototyping for Data Collection</div>
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev2" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next2" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="projectTitle"><u><a href="https://sites.google.com/ucsd.edu/lab-4-site/home">Line Following Robot </a></u></div>
+
+    <p> This was the project I finished at the end of my first engineering class during my freshman year. I worked in a team of four to create a line following robot that would be tested
+        in terms of speed and accuracy through 3 different tracks. My team was able to achieve the most loops in one of the tracks to show that our project had both solid speed and accuracy. All the
+        teams were given the same starting materials. In my team, I made contributions to the CAD design using onShape, I improved upon it by adding more storage space towards the back and adding a shield at the
+        front to prevent light from affecting the photoresistors. I also made contributions to the soldering of our light shield. 
+    </p>
+
+    <img src="./assets/minirobot.jpg"  width="30%" height="30%" style="max-width:100%;height:auto;"/>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="projectTitle"><u><a href="https://github.com/nqrwhal/CSE-110-Moody-Melodies">Software Engineering Project - Moody Melodies </a></u></div>
+
+    <br>
+    <p> This was a quarter long project done in a team of 7, where we aimed to design and produce a webapp that would recommend music to other students based on their moods to help reduce the
+        stress of college life with specific music that could help them relax or manage their emotions better. I made contributions during the design phase, helping the team decide what features
+        we should implement and how we would do them. I also made major contributions on the front-end side of the webapp using HTML, CSS, and some React. 
+    </p>
+
+    <img src="./assets/login.png"  width="30%" height="30%" style="max-width:100%;height:auto;"/>
+
+    <br>
+    <br>
+    <br>
+    
+    <div class="projectTitle"><u><a href="https://e4e.ucsd.edu/radio-collar-tracker/">Engineers For Exploration - Hardware Engineer </a></u></div>
+
+    <br>
+
+    <p> The most recent project I'm working on right now. I joined in Fall 2024, working on the Radio Telemetry Tracking Project. This research program works with various local organizations like the 
+        San Diego Zoo to create and research new technologies or methods to help them in the field. I'm currently working on CAD design and updating the previous payload for our drone, which carries
+        various electrical parts to help transmit the locations of wildlife to a ground station. 
+    </p>
+
+
+</div>
+
+<div id="coursework" class="div3">
+    <div class="subheader"><p>Coursework</p></div>
+    
+    <div class="courselist">
+        <div class="col">
+            <ul>
+                <li>Math 20B - Calculus II</li>
+                <li>Math 20C - Calculus III</li>
+                <li>Math 20D - Differential Equations</li>
+                <li>Math 18 - Linear Algebra</li>
+                <li>Phys 2A - Mechanics</li>
+                <li>Phys 2B - Electricity & Magnetism</li>
+                <li>Phys 2C - Fluids, Waves, Thermodynamics, & Optics</li>
+                <li>ECE 5 - Intro to ECE</li>
+                <li>ECE 35 - Intro to Analog Design</li>
+                <li>ECE 45 - Circuits & Systems</li>
+                <li>ECE 65 - Components & Circuits Laboratory</li>
+                <li>ECE 100 - Linear Electronic Systems</li>
+                <li>ECE 101 - Linear System Fundamentals</li>
+                <li>ECE 102 - Intro to Active Circuit Design</li>
+            </ul>
+        </div>
+        <div class="col">
+            <ul>
+                <li>CSE 11 - Intro to Programming - Java</li>
+                <li>CSE 12 - Basic Data Structures & OOP</li>
+                <li>CSE 15L - Intro to UNIX/Shell Scripting</li>
+                <li>CSE 20 - Discrete Math</li>
+                <li>CSE 21 - Math for Algorithims & Systems</li>
+                <li>CSE 30 - Computer Organization & Systems Programming</li>
+                <li>CSE 100 - Advanced Data Structures</li>
+                <li>CSE 101 - Design & Analysis of Algorithims</li>
+                <li>CSE 110 - Software Engineering</li>
+            </ul>
+        </div>
+    </div>
+    
+</div>
+
+<div id="skills" class="div4">
+    <div class="subheader"><p>Skills</p></div>
+    
+    <p> Hello and thank you for taking the time to go through my website! My name's Yves Mojica, a third year computer engineering student at UC San Diego, 
+        with focus on embedded systems and circuits. I've always had an interest and passion for astronomy growing up, even wanting to pursue astrophysics and become a scientist. 
+        During high school, I gained interest in electronics and computers in general which encouraged me to major in something in the ECE field, which leads me to now, currently 
+        an undergraduate student working on their Bachelor's Degree.
+    </p>
+</div>
+
+<div id="contact" class="div5">
+    <div class="subheader"><p>Contact & Connect With Me</p></div>
+    <div class="contactlinks">
+        <img src="./assets/li.png"  width="20px" height="20px" style="max-width:100%;height:100%;margin-top:20px;margin-right:5px;"/>
+        <a href="https://www.linkedin.com/in/yves-mojica-233aa2213/">Linkedin</a>
+    </div>
+    <div class="contactlinks">
+        <img src="./assets/git.png"  width="20px" height="20px" style="max-width:100%;height:100%;margin-top:20px;margin-right:5px;"/>
+        <a href="https://github.com/Yves-M22">GitHub</a>
+    </div>
+    <div class="contactlinks">
+        <img src="./assets/mail.png"  width="20px" height="20px" style="max-width:100%;height:100%;margin-top:23px;margin-right:5px;"/>
+        <a href="https://mail.google.com/mail/#compose"> sebastianYSM12@gmail.com</a>
+    </div>
+</div>
+
+
+<script>
+    function navMenu() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex-1].style.display = "block";
+}
+</script>
