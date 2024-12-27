@@ -96,7 +96,7 @@ a:hover {
   
   
   /* Next & previous buttons */
-.prev2, .next2 {
+.prev, .next {
 	cursor: pointer;
 	top: 50%;
 	width: auto;
@@ -142,6 +142,22 @@ a:hover {
 	scroll-margin-top: 200px;
 	font-size: 18px;
 	color: white;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-bottom:150px;
+    margin-right:8%;
+    margin-left: 8%;
+    border-radius: 25px;
+    padding: 25px;
+	margin-top: 4%;
+}
+
+.div4 {
+	background-color: rgb(10, 10, 10);
+	scroll-margin-top: 200px;
+	font-size: 18px;
+	color: white;
     margin-bottom:150px;
     margin-right:8%;
     margin-left: 8%;
@@ -163,22 +179,7 @@ ul li {
     margin-bottom: 10px;
 }
 
-.div4 {
-	background-color: rgb(10, 10, 10);
-	scroll-margin-top: 200px;
-	font-size: 18px;
-	color: white;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    margin-bottom:150px;
-    margin-right:8%;
-    margin-left: 8%;
-    text-align: center;
-    border-radius: 25px;
-    padding: 25px;
-	margin-top: 4%;
-}
+
 
 .contactlinks{
 	display: flex;
@@ -207,10 +208,10 @@ body {
     font-family: roboto-regular;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
 	
 	.header {
-		font-size: 16px;
+		font-size: 24px;
 		 margin-right: 0%;
 	}
 
@@ -257,7 +258,6 @@ body {
 	.div1 {
 		background-color: rgb(10, 10, 10);
 		scroll-margin-top: 200px;
-		font-size: 12px;
 		color: white;
 		margin-bottom:50px;
 		margin-right:150px;
@@ -265,7 +265,11 @@ body {
 		border-radius: 25px;
 		padding: 20px;
 		margin-top: 60%;
-		margin-left: 15%;
-		margin-right: 15%;
+		margin-left: 9%;
+		margin-right: 9%;
+	}
+
+	.div4 {
+		font-size: 14px;
 	}
 }
