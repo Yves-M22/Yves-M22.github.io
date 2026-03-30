@@ -283,10 +283,10 @@
       "slideshow-148": 1
 	};
 
-	window.onload = function() {
+	window.addEventListener('load', function() {
       showSlides(1, "slideshow-rpl");
       showSlides(1, "slideshow-148");
-    };
+	});
 
 	function plusSlides(n, containerId) {
       showSlides(slideIndices[containerId] += n, containerId);
