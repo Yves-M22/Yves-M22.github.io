@@ -269,6 +269,10 @@ body {
 		margin-right: 9%;
 	}
 
+	.mySlides {
+    	display: none;
+	}	
+
 	.div4 {
 		font-size: 14px;
 	}
