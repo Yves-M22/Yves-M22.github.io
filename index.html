@@ -59,7 +59,7 @@
 
     </p>
 
-    <div class="slideshow-container-RPL">
+    <div id="slideshow-rpl" class="slideshow-container-RPL">
 
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
@@ -159,7 +159,7 @@
 		That allows for smart control of the jeep.
     </p>
 
-	<div class="slideshow-container-148">
+	<div id="slideshow-148" class="slideshow-container-148">
 
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
@@ -280,27 +280,31 @@
       }
     }
 
-    let slideIndex = 1;
-    showSlides(slideIndex);
+	let slideIndices = {
+      "slideshow-rpl": 1,
+      "slideshow-148": 1
+	};
 
-    // Next/previous controls
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
+	showSlides(1, "slideshow-rpl");
+	showSlides(1, "slideshow-148");
 
-    // Thumbnail image controls
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
+	function plusSlides(n, containerId) {
+      showSlides(slideIndices[containerId] += n, containerId);
+	}
 
-    function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
+	function showSlides(n, containerId) {
+      let i;
+      let container = document.getElementById(containerId);
+      let slides = container.getElementsByClassName("mySlides");
+    
+      if (n > slides.length) { slideIndices[containerId] = 1 }
+      if (n < 1) { slideIndices[containerId] = slides.length }
+    
+      for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
-    }
-    slides[slideIndex-1].style.display = "block";
+      }
+    
+      slides[slideIndices[containerId] - 1].style.display = "block";
+	}
 }
 </script>
